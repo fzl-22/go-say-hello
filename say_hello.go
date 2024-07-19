@@ -1,9 +1,11 @@
 package go_say_hello
 
-func SayHello() string {
-	return "Hello, World!"
+import "fmt"
+
+func SayHello(name string) string {
+	return fmt.Sprintf("Hello, %s", name)
 }
 
-func SayGoodBye() string {
-	return "Good Bye, Cruel World!"
+func SayGoodBye(name string) string {
+	return fmt.Sprintf("Good Bye, %s", name)
 }
